@@ -58,7 +58,7 @@ body {
     height: 100%;
     text-align: center;
   animation-name: stretch;
-  animation-duration: 10s; 
+  animation-duration: 8s; 
   animation-timing-function: ease-out; 
   animation-delay: 0s;
   animation-direction: alternate;
