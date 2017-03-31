@@ -97,12 +97,14 @@ a:hover {
 	position: absolute;
 	max-width: 200px;
 	opacity: 0;
-	-webkit-transition: all .2s ease-in-out;
-  animation: rotating 15s linear infinite;
+	-webkit-transition: all 1s ease-in-out;
+
+  -webkit-transform: translate(400px, 0px);
 }
 
 p#image-paragraph:hover img {
 	opacity: 1;
+  -webkit-transform: translate(0px, 0px);
 }
 
 /* each image is given its own transition delay, so they occur in an order when hovered on */
