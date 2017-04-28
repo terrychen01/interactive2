@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>terry_test3</title>
+    <meta name="author" content="Victor Coulon">
+    <meta name="description" content="jQuery plugin for creating an unique page transitioning system">
+    <link rel="stylesheet" href="../curtain.css">
+    <link rel="stylesheet" href="base.css">
+ 
+
+</head>
+<body>
+
+<ol class="curtains">
+<div class="nev">
+
+               
+     <h4><a href="">Jack Stauffacher</a></h4></br>
+     <h4><a href="">Jennifer Morla</a></h4></br>
+     <h4><a href="">Martin Venezky</a></h4></br>
+     <h4><a href="">Rebecca Mendez</a></h4></br>
+     <h4><a href="">Saul Bass</a></h4></br>
+     <h4><a href="">Thonik</a></h4>
+    
+</div>
+    <!--<li id="section-1" class="cover" data-parallax-background="-.05">-->
+    <li id="section-1" class="cover">
+        <header data-fade="550" data-slow-scroll="3">
+            <h1>belles lettres</h1>
+            <h2> <a href=""> an easy to use scrolling plugin</a></h2>
+        </header>
+    </li>
+
+    <li id="section-2">
+
+        <img src="Content copy/Jack Stauffacher/jack_stauffacher_01.png" height=700px;alt="">
+        <section class="photos">
+        <div class="photos-inner">
+             <li class="Jack Stauffacher"> <img src="Content copy/Jack Stauffacher/jack_stauffacher_02.png" height= 800px; alt="">
+             </li>
+             <li class="Jack Stauffacher"> <img src="Content copy/Jack Stauffacher/jack_stauffacher_03.png" height= 800px; alt="">
+             </li>
+
+            </div>
+
+
+        </section>
+    </li>
+
+    <li id="section-3-1" class="cover">
+        
+            <div class="fadedd"> <h1>Jennifer Morla</h1></div>
+      
+    </li>
+
+    <li id="section-3">
+        <img src="Content copy/Jennifer Morla/morla_design_paulDrecher_01.jpg" height=700px;alt="">
+        <section class="photos">
+        <div class="photos-inner">
+             <li class="Jennifer Morla"> <img src="Content copy/Jennifer Morla/morla_design_turner_classic_movies_program_guide.jpg" height= 800px; alt="">
+             </li>
+             <li class="Jennifer Morla"> <img src="Content copy/Jennifer Morla/morladesign_cappSt01-1.jpg" width= 600px; alt="">
+             </li>
+             
+            </div>
+        </section>
+    </li>
+
+        <li id="section-4">
+        <img src="Content copy/Martin Venezky/martin_venezky_1.png"; alt="">
+        <section class="photos">
+        <div class="photos-inner">
+             <li class="Martin Venezky"> <img src="Content copy/Martin Venezky/martin_venezky_2.png" idth= 600px; alt="">
+             </li>
+             <li class="Martin Venezky"> <img src="Content copy/Martin Venezky/martin_venezky_3.png" width= 600px; alt="">
+             </li>
+             
+            </div>
+        </section>
+    </li>
+
+       <li id="section-5">
+
+
+        <img src="Content copy/Rebecca Mendez/addlab_logotype1_large-1.jpg"; alt="">
+        <section class="photos">
+        <div class="photos-inner">
+             <li class="Rebecca Mendez"> <img src="Content copy/Rebecca Mendez/addlab_brandposter1_large.jpg" idth= 600px; alt="">
+             </li>
+             <li class="Rebecca Mendez"> <img src="Content copy/Rebecca Mendez/addlab_brandposter2_large.jpg" width= 600px; alt="">
+             </li>
+             <li class="Rebecca Mendez"> <img src="Content copy/Rebecca Mendez/addlab_brandposter3_large.jpg" width= 600px; alt="">
+             </li>
+             
+            </div>
+        </section>
+    </li>
+
+   <li id="section-6">
+        <img src="Content copy/saul Bass/saul_bass_01.png" width=700px; alt="">
+        <section class="photos">
+        <div class="photos-inner">
+             <li class="Saul Bass"> <img src="Content copy/saul Bass/saul_bass_02.jpg" width= 600px; alt="">
+             </li>
+             <li class="Saul Bass"> <img src="Content copy/saul Bass/saul_bass_03.jpg" width= 600px; alt="">
+             </li>
+             
+            </div>
+        </section>
+    </li>
+
+<li id="section-7">
+        <img src="Content copy/thonik/thonik_01.png" height=700px; alt="">
+        <section class="photos">
+        <div class="photos-inner">
+             <li class="thonik"> <img src="Content copy/thonik/thonik_02.png" idth= 600px; alt="">
+             </li>
+             <li class="thonik"> <img src="Content copy/thonik/thonik_03.png" width= 600px; alt="">
+             </li>
+             <li class="thonik"> <img src="Content copy/thonik/00-thonik-Holland_Festival_2016-3-1024x768.jpg" width= 600px; alt="">
+             </li>
+             
+            </div>
+        </section>
+    </li>
+
+    <li id="section-8">
+        <section class="photos">
+
+            <div class="fixed">
+
+                <h4>Here's a fixed title</h4>
+                <p>With a small fixed text.</p>
+                <p>Oh, and you can see my last selected Instagram pictures on the left.</p>
+               
+            </div>
+            <div class="photos-inner">
+          
+                <ul class="step-list">
+                    <li class="step">
+                        <img src="Content copy/Martin Venezky/martin_venezky_2.png" alt="">
+                    </li>
+                  
+                </ul>
+            </div>
+        </section>
+    </li>
+      
+</ol>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../curtain.js"></script>
+<script>
+    $(function(){
+       $('.curtains').curtain({
+           scrollSpeed: 300,
+           controls: '.menu',
+           curtainLinks: '.curtain-links',
+           nextSlide: function(){
+            console.log("ok");
+           }
+       });
+    });
+
+
+    $(document).ready(function(){
+
+    $('.curtains>li').css('position', 'fixed');
+
+   $('.curtains').curtain();
+   
+   
+ 
+});
+</script>
+</body>
+</html>
